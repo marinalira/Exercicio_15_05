@@ -9,5 +9,12 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'aula13';
+  nome = "MARI";
+  isButtonApertado: boolean = false;
+
+  title = `Olá, ${this.nome}`;
+
+  onClick(){
+    this.isButtonApertado = !this.isButtonApertado;
+  }
 }
